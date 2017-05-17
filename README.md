@@ -1,2 +1,8 @@
 # LearningByLearning
 Project for tracking learning, created with SpringBoot.
+
+Things Added so far:
+
+1. Initialize application with SpringBoot with one Rest URL.
+2. Using Tomact server.
+3. Added H2Database using ServletContextInitializer
