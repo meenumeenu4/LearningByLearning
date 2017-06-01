@@ -50,7 +50,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
-		<!-- spring boot dependency for JPA  (this adds the spring-jdbc dependency by default)-->
 		 <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -61,11 +60,18 @@
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 		
+		<!-- Dependency to add mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
 	</dependencies>
 	
 
 	<build>
 		<plugins>
+		<!-- Thsi plugin is used to create executable file -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
