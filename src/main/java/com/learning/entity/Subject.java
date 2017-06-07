@@ -29,7 +29,7 @@ public class Subject implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "subject_id")
-	private Integer subjectId;
+	private Long subjectId;
 
 	@Column(name = "subject_name")
 	private String name;
@@ -42,11 +42,11 @@ public class Subject implements Serializable {
 		// no-argument constructor is required by JPA
 	}
 
-	public Integer getSubjectId() {
+	public Long getSubjectId() {
 		return subjectId;
 	}
 
-	public void setSubjectId(Integer subjectId) {
+	public void setSubjectId(Long subjectId) {
 		this.subjectId = subjectId;
 	}
 
